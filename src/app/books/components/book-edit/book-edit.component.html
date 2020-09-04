@@ -1,0 +1,8 @@
+<pre>{{ bookForm.value | json }}</pre>
+
+<form [formGroup]="bookForm" (submit)="onSubmit()">
+<input type="text" formControlName="name">
+<input type="text" formControlName="earnings">
+<input type="text" formControlName="description">
+<button type="submit">{{ mode === 'CREATE' ? 'Create' : 'Update' }}</button>
+</form>
