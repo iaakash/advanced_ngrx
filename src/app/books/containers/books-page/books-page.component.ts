@@ -27,6 +27,7 @@ export class BooksPageComponent implements OnInit {
   ngOnInit(): void {
     this.allBooks$ = this.store.select(booksSelectors.getAllBooks);
     this.selectedBook$ = this.store.select(booksSelectors.getSelectedBook);
+    this.earningsCount$ = this.store.select(booksSelectors.getEarningsCount);
   }
 
   onSelect(bookId) {

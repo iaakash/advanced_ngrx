@@ -1,7 +1,7 @@
 export interface Book {
     id?: number,
     name: string,
-    earnings: string,
+    earnings: number,
     description?: string
 }
 

@@ -1,6 +1,7 @@
 import { BooksState } from '../reducers/books-reducer';
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import {getDefaultProductStructure} from '../../utilities/books-utilities';
+import { Book } from '../../models/book.model';
 
 const getBooksFeatureState = createFeatureSelector<BooksState>('books');
 
@@ -25,8 +26,15 @@ export const getSelectedBook = createSelector(
 
 export const getEarningsCount = createSelector(
   getBooksFeatureState,
-  (state) => {
-    //return id ? state.allBooks.filter(book => book.id === id)[0] : getDefaultProductStructure(id)
-  }
+  getAllBooks,
+ (books) => {
+   let res =  [...books.allBooks].reduce((acc, curr) => {
+     console.log('acc', acc);
+     console.log('curr', curr);
+     return acc + curr.earnings;
+    }, 0);
+    console.log(res);
+   return res;
+ }
 );
 

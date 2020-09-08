@@ -3,44 +3,38 @@
     {
       "id": 1,
       "name": "update",
-      "earnings": "85000000",
+      "earnings": 1,
       "description": "update"
     },
     {
       "id": 2,
       "name": "The Adventures of Pinocchio",
-      "earnings": "85000000",
+      "earnings": 2,
       "description": "update"
     },
     {
       "id": 3,
       "name": "The Hobbit",
-      "earnings": "100000000",
+      "earnings": 3,
       "description": null
     },
     {
       "id": 5,
-      "earnings": "werwer",
+      "earnings": 4,
       "name": "wrw-update",
       "description": "qerqer"
     },
     {
       "id": 6,
-      "earnings": "qwewe2",
-      "name": "aas",
-      "description": "2323232"
+      "earnings": 5,
+      "name": "ewew",
+      "description": "232"
     },
     {
       "id": 7,
-      "earnings": "4567",
-      "name": "nice create",
-      "description": "description"
-    },
-    {
-      "id": 8,
-      "earnings": "452",
-      "name": "anoyher create",
-      "description": "anoyher create"
+      "earnings": 1,
+      "name": "ww",
+      "description": "323"
     }
   ]
 }

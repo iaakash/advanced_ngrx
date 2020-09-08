@@ -1,5 +1,5 @@
 <div class="content">
-    <app-earnings-count></app-earnings-count>
+    <app-earnings-count [earningsCount]="earningsCount$ | async"></app-earnings-count>
     <button (click)="createBook()">Create Book</button>
     <app-books-display [books]="allBooks$ | async" (select)="onSelect($event)"></app-books-display>
     <app-book-edit *ngIf="selectedBook$ | async as selectedBook" [book]="selectedBook$ | async" (save)="onBookCreateOrUpdate($event)"></app-book-edit>
